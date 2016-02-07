@@ -13,3 +13,20 @@ border-radius: 50%;
 text-transform: capitalize;
 color: red; 
 }
+#back-lay {
+position: fixed;
+top: 0; 
+bottom: 0;
+right: 175px;
+left: 175px;
+background: floralwhite; 
+text-align: center; 
+}
+#wrapper {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlWlxx1-t9WxcEv4tU-ewyCUAje3gwR9WrnaX0vMhDO15_l-Cr");
+}

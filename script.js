@@ -1,9 +1,8 @@
 var app = angular.module("app", []); 
 app.controller("mainCtrl", mainCtrl); //This tells the controller the name of the function to run when it is needed
 app.directive("avatar", avatarDirective); 
-
+var counter = 0; 
 function mainCtrl ($scope) {
-	console.log("Yeah");
 	$scope.users = []; 
 	$scope.addNew = function (user) {
 		$scope.users.push({
@@ -30,9 +29,19 @@ function avatarDirective() {
 		link: link
 	};
 
-function link (scope) {
+function link (scope) { 
 	if (!scope.user.avatarUrl) {
 		scope.user.avatarUrl = 'http://thealmanac.org/assets/img/default_avatar.png';
 	}
 }
 }
+
+$("#add-button").on("click", function() {
+	counter++;
+	console.log(counter);
+	if (counter == 6)
+	{
+		console.log("We made it in here");
+		$(".user-list").append("</tr ng-repeat=\"user in users\"><tr>");
+	}
+});
