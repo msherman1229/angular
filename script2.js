@@ -23,7 +23,9 @@ function avatarDirective() {
 		template: (
 			"<div class=\"avatar\">" +
 			"<img ng-src=\"{{user.avatarUrl}}\"/>" +
+			"<div class=\"text-box\"" +
 			"<h4>{{user.name}}</h4>" +
+			"</div>" +
 			"</div>"
 		), 
 		link: link
@@ -32,6 +34,9 @@ function avatarDirective() {
 function link (scope) { 
 	if (!scope.user.avatarUrl) {
 		scope.user.avatarUrl = 'http://thealmanac.org/assets/img/default_avatar.png';
+	}
+	if (!scope.user.name) {
+		scope.user.name = "No Name";
 	}
 }
 }
