@@ -61,4 +61,17 @@ width: 100px;
 height: 100px;
 font-family: "Helvetica Neue";
 text-transform: capitalize;
+font-weight: bold;
+}
+button:hover {
+background-color: #CD645E;
+color: white;
+outline: none;
+border: none;
+border-radius: 5px; 
+}
+#add-button {
+margin-top: 10px;
+width: 100px;
+height: 21px;
 }
