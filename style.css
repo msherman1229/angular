@@ -86,3 +86,6 @@ outline: none;
 border: none;
 border-radius: 5px;
 }
+#add-form {
+margin-bottom: 20px;
+}
