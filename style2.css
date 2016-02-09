@@ -75,3 +75,14 @@ margin-top: 10px;
 width: 100px;
 height: 21px;
 }
+input:focus {
+outline: none;
+}
+button:focus {
+outline: none;
+background-color: #CD645E;
+color: white;
+outline: none;
+border: none;
+border-radius: 5px;
+}
