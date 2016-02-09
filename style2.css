@@ -19,8 +19,10 @@ top: 0;
 bottom: 0;
 right: 175px;
 left: 175px;
-background: floralwhite; 
-text-align: center; 
+background: white;  
+text-align: center;
+box-shadow: 5px 5px 50px, -5px 5px 50px; 
+overflow: scroll;
 }
 #wrapper {
 position: fixed;
@@ -29,4 +31,17 @@ bottom: 0;
 left: 0;
 right: 0;
 background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlWlxx1-t9WxcEv4tU-ewyCUAje3gwR9WrnaX0vMhDO15_l-Cr");
+}
+#submit-box {
+height: 30px;
+width: 160px;
+text-align: center; 
+font-family: "Helvetica Neue";
+}
+h1 {
+font-family: "Helvetica Neue";
+}
+li {
+list-style-type: none;
+padding: 10px 50px 10px 50px;
 }

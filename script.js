@@ -35,13 +35,12 @@ function link (scope) {
 	}
 }
 }
-
 $("#add-button").on("click", function() {
 	counter++;
 	console.log(counter);
-	if (counter == 6)
+	if (counter == 3)
 	{
 		console.log("We made it in here");
-		$(".user-list").append("</tr ng-repeat=\"user in users\"><tr>");
+		$("#table-data").append("</tr>");
 	}
 });

@@ -6,22 +6,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <!--<script src="script.js"></script>--!>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel"stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="wrapper" ng-app="app" ng-controller="mainCtrl">
 <div id="back-lay">
 <div id="form-box">
 <!--<div ng-app="app" ng-controller="mainCtrl">--!>
-<h1>Create New User</h1>
+<div class="container">
+	<div class="page-header">
+		<h1>Create New User</h1>
+	</div>
+</div>
 <form name="userForm" ng-submit="addNew(userForm)">
-<input placeholder="Name" ng-model="userForm.name"/>
-<input placeholder="Image URL" ng-model="userForm.url"/>
-<button id="add-button"  type="submit">Add New</button>
+<input id="submit-box" placeholder="Name" ng-model="userForm.name"/>
+<input id="submit-box" placeholder="Image URL" ng-model="userForm.url"/><br>
+<button id="add-button" type="submit" class="btn btn-default btn-lg">Add New</button>
 </form>
-<table class="user-list">
-<td ng-repeat="user in users"><avatar user="user"/></td>
-</table>
+<div class="row">
+<div class="col-sm-4">
+<li ng-repeat="user in users" id="table-data" style= "float:left"><avatar user="user"/></li>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
